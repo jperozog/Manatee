@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.primeraParte{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+    background-color: #ff7f50;
+    .imagen{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        img{
+            width: 90%;
+        }
+       
+    }
+
+    .texto{
+        width: 40%;
+        height: auto;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 55px;
+            color: white;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        
+        p{
+            color: white;
+            font-size: 40px;
+            margin-top: 5%;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.segundaParte{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+    background-color: #6495ed;
+    .imagen{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        img{
+            width: 70%;
+        }
+       
+    }
+
+    .texto{
+        width: 40%;
+        height: auto;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 55px;
+            color: white;
+            margin-top: 5%;
+        }
+        .opciones{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5%;
+            width: 100%;
+            flex-wrap: wrap;
+            p{
+                display: flex;
+                flex-direction: row;
+                margin-left: 5%;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                width: 40%;
+                margin-top: 2%;
+                text-align: center;
+            }
+        }
+       
+    }
+}
+
+.terceraParte{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0% 10% 0%;
+    margin-bottom: 1%;
+
+    .titulo{
+        width: 90%;
+        h3{
+            color: coral;
+            text-align: right;
+            font-size: 35px;
+        }
+    }
+    
+   
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .tarjeta1,.tarjeta2,.tarjeta3{
+            width: 20%;
+            margin-left: 2%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 1s ease all;
+            margin-top: 5%;
+            border-radius: 5%;
+            &:hover{
+                margin-bottom: 1%;
+                transition: 1s ease all;
+            }
+           
+        }
+    
+        .tarjeta1{
+           margin-top: 10%;
+            background-color: coral;
+            fa-icon{
+                color: cornflowerblue;
+                font-size: 50px;
+            }
+            h2{
+                margin-top: 5%;
+                color: white;
+            }
+            p{
+                text-align: center;
+                color: white;
+                margin-top: 10%;
+                width: 80%;
+            }
+        }
+    
+        .tarjeta2{
+            margin-top: 5%;
+            background-color: cornflowerblue;
+            fa-icon{
+                color: white;
+                font-size: 50px;
+            }
+            h2{
+                margin-top: 5%;
+                color: white;
+            }
+            p{
+                text-align: center;
+                color: white;
+                margin-top: 10%;
+                width: 80%;
+            }
+        }
+    
+        .tarjeta3{
+            margin-top: 0%;
+            background-color: white;
+            border: 1px solid cornflowerblue;
+            fa-icon{
+                color: coral;
+                font-size: 50px;
+            }
+            h2{
+                margin-top: 5%;
+                color: cornflowerblue;
+            }
+            p{
+                text-align: center;
+                margin-top: 10%;
+                width: 80%;
+            }
+        }
+    }
+       
+    
+
+    
+    
+}
+
+
+
+.cuartaParte{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+  
+    .imagen{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        img{
+            width: 80%;
+        }
+       
+    }
+
+    .texto{
+        width: 40%;
+        height: auto;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 55px;
+            color: #6495ed;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        
+        p{
+            color: coral;
+            font-size: 25px;
+            margin-top: 5%;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.quintaParte{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+   
+    .imagen{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        img{
+            width: 80%;
+        }
+       
+    }
+
+    .texto{
+        width: 40%;
+        height: auto;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 55px;
+            color: coral;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        
+        p{
+            color: cornflowerblue;
+            font-size: 25px;
+            margin-top: 5%;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.sextaParte{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 0%;
+    background-color: #ff7f50;
+
+    .texto{
+        width: 40%;
+        height: auto;
+        display: flex;
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-weight: 700;
+            font-size: 45px;
+            color: white;
+            text-align: center;
+        }
+
+        
+        p{
+            color: gray;
+            font-size: 25px;
+            margin-top: 5%;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.boton,.boton2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    z-index: 1;
+    top: 30px;
+    right:100px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    fa-icon{
+        color:coral
+    }
+}
+
+.boton2{
+    right:30px
+}
