@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-import { faCarCrash } from '@fortawesome/free-solid-svg-icons';
-import { faUserInjured } from '@fortawesome/free-solid-svg-icons';
-import { faBuilding } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faCarCrash,faHeart,faBuilding,faPhone,faEnvelope,faHome,faTruck,faHeartbeat,faBriefcaseMedical  } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-root',
@@ -13,8 +10,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export class AppComponent {
   title = 'manatee';
   faCarCrash = faCarCrash;
-  faUserInjured = faUserInjured;
-  faBuilding = faBuilding;
+  faHeart = faHeart;
+  faHeartbeat = faHeartbeat;
   faPhone = faPhone;
   faEnvelope = faEnvelope;
+  faHome = faHome
+  faTruck=faTruck
+  faBriefcaseMedical = faBriefcaseMedical
+ 
 }
