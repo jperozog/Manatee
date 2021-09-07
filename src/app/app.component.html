@@ -1,13 +1,13 @@
 <div class="primeraParte">
   <div class="imagen">
 
-   <img src="assets/img/familia3.png" alt="">
+    <img src="assets/img/familia3.png" alt="">
 
 
   </div>
   <div class="texto">
     <h1>Seguros Manatee</h1>
-    <p>El regalo ideal, para el ahorro familiar.</p>
+    <p>¡Su seguro de confianza!</p>
 
     <div class="seguros">
       <div class="tipo">
@@ -43,41 +43,6 @@
     <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
       style="stroke: none; fill: #526ba3;"></path>
   </svg></div>
-<!--
-<div class="terceraParte">
-  <div class="titulo">
-    <h3>Servicios</h3>
-  </div>
-
-  <div class="tarjetas">
-    <div class="tarjeta1">
-      <fa-icon [icon]="faCarCrash"></fa-icon>
-
-      <h2>Seguro de auto</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi velit labore similique voluptate natus dolore
-        perspiciatis amet? Amet expedita commodi quos harum sit ratione aliquid, officiis vero ipsam deleniti odit!</p>
-    </div>
-    <div class="tarjeta2">
-     
-      <h2>Seguro de vida</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nemo optio facere beatae autem, quis
-        repellendus
-        recusandae, provident nisi dolore laborum distinctio quasi quo porro cupiditate iure voluptate placeat totam.
-      </p>
-    </div>
-    <div class="tarjeta3">
-     
-      <h2>Seguro de empresa</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis eos culpa voluptas vitae in, inventore
-        numquam
-        ab. Sed voluptatum, perspiciatis repellat deleniti laboriosam cumque! Qui accusamus nisi cupiditate corrupti
-        nobis.</p>
-    </div>
-  </div>
-
-
-</div>
--->
 
 <div class="segundaParte">
 
@@ -120,7 +85,7 @@
     <div class="llamar">
       <a href="tel:+18554572583">
         <fa-icon [icon]="faPhone"></fa-icon>
-        +185 545 725 83
+        +1855 457 25 83
       </a>
     </div>
     <p>- Estamos aquí para escuchar y dar respuesta a cualquier duda que pueda tener con el trato profesional y la
@@ -146,23 +111,33 @@
     <img src="assets/img/opcion.png" alt="">
   </div>
 </div>
+
+
+<div class="cuartaParte2">
+  <div class="imagen">
+    <img src="assets/img/obama.png" alt="">
+  </div>
+  <div class="texto">
+
+    <h1>Somos su mejor opcion para su seguro de salud</h1>
+
+    <div class="marcas">
+      <div class="imagen"><img src="assets/img/ambetter.png" alt=""></div>
+      <div class="imagen"><img src="assets/img/molina.png" alt=""></div>
+      <div class="imagen"><img src="assets/img/bright.png" alt=""></div>
+      <div class="imagen"><img src="assets/img/oscar.png" alt=""></div>
+      <div class="imagen"><img src="assets/img/friday.png" alt=""></div>
+      <div class="imagen"><img src="assets/img/care.png" alt=""></div>
+
+    </div>
+  </div>
+
+</div>
 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
     style="height: 100%; width: 100%;">
     <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-      style="stroke: none; fill: #e21d26;"></path>
+      style="stroke: none; fill: #526ba3;"></path>
   </svg></div>
-<!--
-<div class="cuartaParte">
-
-  <div class="texto">
-    <h1>Seguro de empresas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </div>
-  <div class="imagen">
-    <img src="assets/img/empresa.png" alt="">
-  </div>
-</div>
--->
 
 <div class="terceraParte">
   <div class="titulo">
@@ -236,26 +211,29 @@
 
 </div>
 
+<div class="bar">
+  <div class="logo">
+    <img src="assets/img/logo2.png" alt="">
+    <select name="select">
+      <option value="es">Español</option>
+      <option value="en" selected>Ingles</option>
+    </select>
+  </div>
+  <div class="boton">
+    <a href="tel:+18554572583">
+      <fa-icon [icon]="faPhone"></fa-icon>
+    </a>
+  </div>
 
-<div class="boton">
-  <a href="tel:+18554572583">
-    <fa-icon [icon]="faPhone"></fa-icon>
-  </a>
+  <div class="boton2">
+    <a href="#" (click)="openModal()">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+    </a>
+
+  </div>
+
 </div>
 
-<div class="boton2">
-  <a href="#" (click)="openModal()">
-    <fa-icon [icon]="faEnvelope"></fa-icon>
-  </a>
-
-</div>
-<div class="logo">
-  <img src="assets/img/logo2.png" alt="">
-  <select name="select">
-    <option value="es">Español</option>
-    <option value="en" selected>Ingles</option>
-  </select>
-</div>
 
 
 
@@ -263,43 +241,43 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-      <span class="close" (click)="closeModal()">&times;</span>
-    
-      <div class="segundaParteModal">
-          <h3>INGRESE SUS DATOS</h3>
+    <span class="close" (click)="closeModal()">&times;</span>
 
-          <p class="tituloModal">* Al momento del envio de sus datos, le contactaremos a la brevedad posible.</p>
-          <div class="inputs">
-              <div class="input">
-                  <label>NOMBRE</label>
-                  <input type="text" >
-              </div>
-              <div class="input">
-                  <label>APELLIDO</label>
-                  <input type="text" >
-              </div>
-          </div>
+    <div class="segundaParteModal">
+      <h3>INGRESE SUS DATOS</h3>
 
-          <div class="inputs">
-              <div class="input">
-                  <label>TELEFONO</label>
-                  <input type="text" >
-              </div>
-              <div class="input">
-                  <label>EMAIL</label>
-                  <input type="text" >
-              </div>
-          </div>
-
-          <div class="inputs">
-            <div class="input">
-                <label>CODIGO POSTAL</label>
-                <input type="text" >
-            </div>
+      <p class="tituloModal">* Al momento del envio de sus datos, le contactaremos a la brevedad posible.</p>
+      <div class="inputs">
+        <div class="input">
+          <label>NOMBRE</label>
+          <input type="text">
         </div>
-
-          <button  (click)="enviarCotizacion()"> Enviar Datos</button>
+        <div class="input">
+          <label>APELLIDO</label>
+          <input type="text">
+        </div>
       </div>
+
+      <div class="inputs">
+        <div class="input">
+          <label>TELEFONO</label>
+          <input type="text">
+        </div>
+        <div class="input">
+          <label>EMAIL</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <div class="inputs">
+        <div class="input">
+          <label>CODIGO POSTAL</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <button (click)="enviarCotizacion()"> Enviar Datos</button>
+    </div>
 
 
   </div>
