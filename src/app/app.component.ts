@@ -1,3 +1,4 @@
+import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
 import { faCarCrash,faHeart,faBuilding,faPhone,faEnvelope,faHome,faTruck,faHeartbeat,faBriefcaseMedical  } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,5 +18,32 @@ export class AppComponent {
   faHome = faHome
   faTruck=faTruck
   faBriefcaseMedical = faBriefcaseMedical
+
+
+  closeModal() {
+    
+    let modal = document.getElementById("myModal") as HTMLElement;
+
+      modal.style.display = "none";
+
+  }
+
+
+  openModal() {
+    // Get the modal
+    let modal = document.getElementById("myModal") as HTMLElement;
+
+      modal.style.display = "block";
+      
+   console.log("algo")
+
+   
+  }
+
+  enviarCotizacion(){
+    console.log("hola")
+  }
  
 }
+
+

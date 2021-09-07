@@ -1346,8 +1346,7 @@
 
   <div class="texto">
     <h1>¿Por qué Seguros Manatee es su mejor opción? </h1>
-    <p>- Estamos cerca de usted, con agentes de seguros, distribuidos en más de 150 oficinas en la Florida, Texas y
-      California, a su disposición.</p>
+    <p>- Estamos cerca de usted, con agentes de seguros, distribuidos en la Florida y Texas a su disposición.</p>
     <p>- Si se cambia a Seguros Manatee podrá ahorrar hasta el 40% de su póliza actual.</p>
     <p>- ¡Ofrecemos la seguridad de estar protegidos, si hay un problema vamos a estar allí para usted!</p>
     <p>- Sin impuestos extras en nuestro servicio.</p>
@@ -1521,7 +1520,7 @@
 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
     style="height: 100%; width: 100%;">
     <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-      style="stroke: none; fill: #ff747d;"></path>
+      style="stroke: none; fill: #e21d26;"></path>
   </svg></div>
 <!--
 <div class="cuartaParte">
@@ -1549,7 +1548,7 @@
 </div>
 <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
     style="height: 100%; width: 100%;">
-    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ff747d
+    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e21d26
 ;"></path>
   </svg></div>
 
@@ -1585,7 +1584,7 @@
 
       <h3>EMAIL</h3>
 
-      <a href="#">example@example.com</a>
+      <a href="#">segurosmanatee@gmail.com</a>
 
     </div>
     <div class="derecha">
@@ -1616,11 +1615,63 @@
 </div>
 
 <div class="boton2">
-  <a href="mailto:perozo64@gmail.com ">
+  <a href="#" (click)="openModal()">
     <fa-icon [icon]="faEnvelope"></fa-icon>
   </a>
 
 </div>
 <div class="logo">
   <img src="assets/img/logo2.png" alt="">
+  <select name="select">
+    <option value="es">Español</option>
+    <option value="en" selected>Ingles</option>
+  </select>
+</div>
+
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+    
+      <div class="segundaParteModal">
+          <h3>INGRESE SUS DATOS</h3>
+
+          <p class="tituloModal">* Al momento del envio de sus datos, le contactaremos a la brevedad posible.</p>
+          <div class="inputs">
+              <div class="input">
+                  <label>NOMBRE</label>
+                  <input type="text" >
+              </div>
+              <div class="input">
+                  <label>APELLIDO</label>
+                  <input type="text" >
+              </div>
+          </div>
+
+          <div class="inputs">
+              <div class="input">
+                  <label>TELEFONO</label>
+                  <input type="text" >
+              </div>
+              <div class="input">
+                  <label>EMAIL</label>
+                  <input type="text" >
+              </div>
+          </div>
+
+          <div class="inputs">
+            <div class="input">
+                <label>CODIGO POSTAL</label>
+                <input type="text" >
+            </div>
+        </div>
+
+          <button  (click)="enviarCotizacion()"> Enviar Datos</button>
+      </div>
+
+
+  </div>
 </div>
