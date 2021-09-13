@@ -1,6 +1,6 @@
 import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
-import { faCarCrash,faHeart,faBuilding,faPhone,faEnvelope,faHome,faTruck,faHeartbeat,faBriefcaseMedical,faCheck  } from '@fortawesome/free-solid-svg-icons';
+import { faCarCrash,faHeart,faBuilding,faPhone,faEnvelope,faHome,faTruck,faUserMd,faTooth,faCheck,faHardHat  } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -12,13 +12,14 @@ export class AppComponent {
   title = 'manatee';
   faCarCrash = faCarCrash;
   faHeart = faHeart;
-  faHeartbeat = faHeartbeat;
+  faHeartbeat = faUserMd;
   faPhone = faPhone;
   faEnvelope = faEnvelope;
   faHome = faHome
   faTruck=faTruck
-  faBriefcaseMedical = faBriefcaseMedical
+  faBriefcaseMedical = faTooth
   faCheck = faCheck
+  faHardHat = faHardHat
 
 
   closeModal() {

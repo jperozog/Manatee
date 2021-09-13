@@ -38,6 +38,10 @@
         align-items: center;
         justify-content: center;
 
+
+        img{
+            width: 50%;
+        }
         h1{
             font-weight: 700;
             font-size: 55px;
@@ -56,7 +60,7 @@
         }
 
         .seguros{
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -68,7 +72,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 15%;
+                width: 14%;
                 padding: 3%;
                 height: auto;
                 margin-top: 10%;
@@ -499,21 +503,12 @@
 
 } 
 
-.bar{
-    top: 3%;
-    right:1%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    background-color: white;
-    border-radius: 50px;
-    padding: 0% 1%;
-}
+
 
 .boton,.boton2,.logo{
+    top: 3%;
+    right:3%;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -532,17 +527,16 @@
 }
 
 .boton2{
-    right:30px
+    right:7%
 }
 
 .logo{
-    width: 60%;
+    width: 20%;
     height: 50px;
-    right: 80%;
+    right: 78%;
     cursor: auto;
-    margin-right: 5%;
     img{
-        width: 80%;
+        width: 50%;
     }
 
     select{
