@@ -265,33 +265,34 @@
       <div class="inputs">
         <div class="input">
           <label>NOMBRE</label>
-          <input type="text">
+          <input type="text" [(ngModel)] = "datos.nombre">
         </div>
         <div class="input">
           <label>APELLIDO</label>
-          <input type="text">
+          <input type="text" [(ngModel)] = "datos.apellido">
         </div>
       </div>
 
       <div class="inputs">
         <div class="input">
           <label>TELEFONO</label>
-          <input type="text">
+          <input type="text" [(ngModel)] = "datos.telefono">
         </div>
         <div class="input">
           <label>EMAIL</label>
-          <input type="text">
+          <input type="text" [(ngModel)] = "datos.correo">
         </div>
       </div>
 
       <div class="inputs">
         <div class="input">
           <label>CODIGO POSTAL</label>
-          <input type="text">
+          <input type="text" [(ngModel)] = "datos.codigopostal">
         </div>
       </div>
 
-      <button (click)="enviarCotizacion()"> Enviar Datos</button>
+
+      <button *ngIf="datos.nombre != ''  && datos.apellido != ''  && datos.telefono.length >= 9 && datos.correo.includes('@') && datos.correo.includes('.com') && datos.codigopostal != '' " (click)="enviarCotizacion()"> Enviar Datos</button>
     </div>
 
 
