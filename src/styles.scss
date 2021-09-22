@@ -172,6 +172,7 @@
 
     .titulo{
         width: 90%;
+        margin-bottom: 5%;
         h3{
             color: #526ba3;
             text-align: right;
@@ -181,11 +182,17 @@
     
    
     .tarjetas{
-        height: 500px;
+        height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+
+        video{
+            width: 70%;
+            height: 50%;
+        }
     }
     
 }
@@ -832,11 +839,16 @@
         
        
         .tarjetas{
-            height: 500px;
+            height: auto;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
+
+            video{
+                width: 90%;
+                height: 50%;
+            }
         }
         
     }

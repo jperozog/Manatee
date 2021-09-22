@@ -56,7 +56,8 @@
 
     <div class="opciones">
       <p>
-        <fa-icon [icon]="faCheck"></fa-icon> Tranquilidad de mental</p>
+        <fa-icon [icon]="faCheck"></fa-icon> Tranquilidad de mental
+      </p>
       <p>
         <fa-icon [icon]="faCheck"></fa-icon> Control para la vida
       </p>
@@ -148,7 +149,11 @@
     <h3>Video Demostrativo</h3>
   </div>
 
+
   <div class="tarjetas">
+    <video controls  >
+      <source src="../assets/video/video.mp4" type="video/mp4">
+    </video>
 
   </div>
 
@@ -199,21 +204,25 @@
       <h3>REDES SOCIALES</h3>
       <div class="social">
 
-        <a  target="_blank"  href="https://www.instagram.com/segurosmanateefl/">  <img class="img-responsive" src="assets/img/Instagram2.png"></a>
+        <a target="_blank" href="https://www.instagram.com/segurosmanateefl/"> <img class="img-responsive"
+            src="assets/img/Instagram2.png"></a>
 
-      <a  target="_blank"  href="https://twitter.com/segurosmanatee"> <img class="img-responsive" src="assets/img/Twitter2.png"></a>
+        <a target="_blank" href="https://twitter.com/segurosmanatee"> <img class="img-responsive"
+            src="assets/img/Twitter2.png"></a>
 
-       
 
-        <a  target="_blank"  href="https://www.facebook.com/segurosmanateefl"><img class="img-responsive" src="assets/img/facebook.png"></a>
 
-        
-        <a  target="_blank"  href="#"> <img class="img-responsive" src="assets/img/linkedin.png"></a>
-       
+        <a target="_blank" href="https://www.facebook.com/segurosmanateefl"><img class="img-responsive"
+            src="assets/img/facebook.png"></a>
 
-        <a  target="_blank"  href="https://www.tiktok.com/@segurosmanateefl?lang=es"> <img class="imgtik" src="assets/img/tiktok.png"></a>
 
-       
+        <a target="_blank" href="#"> <img class="img-responsive" src="assets/img/linkedin.png"></a>
+
+
+        <a target="_blank" href="https://www.tiktok.com/@segurosmanateefl?lang=es"> <img class="imgtik"
+            src="assets/img/tiktok.png"></a>
+
+
       </div>
     </div>
   </div>
@@ -227,25 +236,25 @@
 </div>
 
 
-  <div class="logo">
-    <img src="assets/img/logo2.png" alt="">
-    <select name="select">
-      <option value="es">Español</option>
-      <option value="en" selected>Ingles</option>
-    </select>
-  </div>
-  <div class="boton">
-    <a href="tel:+18554572583">
-      <fa-icon [icon]="faPhone"></fa-icon>
-    </a>
-  </div>
+<div class="logo">
+  <img src="assets/img/logo2.png" alt="">
+  <select name="select">
+    <option value="es">Español</option>
+    <option value="en" selected>Ingles</option>
+  </select>
+</div>
+<div class="boton">
+  <a href="tel:+18554572583">
+    <fa-icon [icon]="faPhone"></fa-icon>
+  </a>
+</div>
 
-  <div class="boton2">
-    <a href="#" (click)="openModal()">
-      <fa-icon [icon]="faEnvelope"></fa-icon>
-    </a>
+<div class="boton2">
+  <a href="#" (click)="openModal()">
+    <fa-icon [icon]="faEnvelope"></fa-icon>
+  </a>
 
-  </div>
+</div>
 
 
 
@@ -265,34 +274,36 @@
       <div class="inputs">
         <div class="input">
           <label>NOMBRE</label>
-          <input type="text" [(ngModel)] = "datos.nombre">
+          <input type="text" [(ngModel)]="datos.nombre">
         </div>
         <div class="input">
           <label>APELLIDO</label>
-          <input type="text" [(ngModel)] = "datos.apellido">
+          <input type="text" [(ngModel)]="datos.apellido">
         </div>
       </div>
 
       <div class="inputs">
         <div class="input">
           <label>TELEFONO</label>
-          <input type="text" [(ngModel)] = "datos.telefono">
+          <input type="text" [(ngModel)]="datos.telefono">
         </div>
         <div class="input">
           <label>EMAIL</label>
-          <input type="text" [(ngModel)] = "datos.correo">
+          <input type="text" [(ngModel)]="datos.correo">
         </div>
       </div>
 
       <div class="inputs">
         <div class="input">
           <label>CODIGO POSTAL</label>
-          <input type="text" [(ngModel)] = "datos.codigopostal">
+          <input type="text" [(ngModel)]="datos.codigopostal">
         </div>
       </div>
 
 
-      <button *ngIf="datos.nombre != ''  && datos.apellido != ''  && datos.telefono.length >= 9 && datos.correo.includes('@') && datos.correo.includes('.com') && datos.codigopostal != '' " (click)="enviarCotizacion()"> Enviar Datos</button>
+      <button
+        *ngIf="datos.nombre != ''  && datos.apellido != ''  && datos.telefono.length >= 9 && datos.correo.includes('@') && datos.correo.includes('.com') && datos.codigopostal != '' "
+        (click)="enviarCotizacion()"> Enviar Datos</button>
     </div>
 
 
